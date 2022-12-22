@@ -1,0 +1,30 @@
+body {
+  background-color: var(--bcg-color-primary);
+  font-family: 'Montserrat', Verdana, sans-serif;
+  color: var(--text-color-primary);
+  letter-spacing: 0.04em;
+
+  overflow-x: hidden;
+}
+
+.section__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(30 / 38);
+  text-align: center;
+  text-transform: uppercase;
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+  }
+}
