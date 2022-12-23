@@ -1,0 +1,205 @@
+.footer {
+  background-color: var(--bcg-color-second);
+}
+
+.footer__title {
+  margin-top: 60px;
+  width: 232px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    width: 352px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 120px;
+    width: 504px;
+  }
+}
+
+.footer__title-part-one {
+  display: block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  color: var(--text-color-primary);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(32 / 26);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+}
+
+.footer__title-part-two {
+  margin-top: 16px;
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 34px;
+  line-height: calc(41 / 34);
+
+  letter-spacing: 0.06em;
+
+  color: #fcfcfc;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 8px;
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+  }
+}
+
+// -------------------заголовок та соціальні мережі з контактами
+.footer__title-link {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* ------------------------------соціальні мережі та контакти */
+.footer__socials-contact {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+// * ------------------------------соціальні мережі */
+.footer__socials {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  color: #84a178;
+
+  &:hover,
+  &:focus {
+    color: #fcfcfc;
+  }
+}
+
+.footer__socials-icon {
+  fill: currentColor;
+}
+
+/* -------------------------------телефон */
+.footer__contact {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  letter-spacing: 0.02em;
+  text-align: right;
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 34px;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.footer__contact-link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(30 / 16);
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+/* -----------------------------------копірайт */
+
+.copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+
+  text-align: center;
+
+  border-top: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    line-height: calc(26 / 14);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    padding-top: 12px;
+    margin-top: 60px;
+  }
+}
