@@ -3,69 +3,73 @@
 }
 
 .footer__title {
-  margin-top: 60px;
-  width: 232px;
+  max-width: 250px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 40px;
-    width: 352px;
+    max-width: 352px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 120px;
-    width: 504px;
+    max-width: 504px;
   }
 }
 
 .footer__title-part-one {
-  display: block;
-
   font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18);
 
   color: var(--text-color-primary);
 
+  margin-top: 60px;
+
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: calc(32 / 26);
+
+    margin-top: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     font-weight: 400;
     font-size: 30px;
     line-height: calc(37 / 30);
+
+    margin-top: 120px;
   }
 }
 
 .footer__title-part-two {
-  margin-top: 16px;
-  display: inline-block;
-
   font-weight: 700;
   font-size: 34px;
   line-height: calc(41 / 34);
 
-  letter-spacing: 0.06em;
+  color: var(--text-color-primary);
 
-  color: #fcfcfc;
+  margin-top: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 8px;
     font-size: 48px;
     line-height: calc(59 / 48);
+    letter-spacing: 0.06em;
+
+    margin-top: 8px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: calc(71 / 58);
+    letter-spacing: 0.06em;
+
+    margin-top: 14px;
   }
 }
 
 // -------------------заголовок та соціальні мережі з контактами
-.footer__title-link {
+.footer__title-socials-contact {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
@@ -80,28 +84,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    padding-top: 20px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
   }
 }
 
 // * ------------------------------соціальні мережі */
-.footer__socials {
-  margin-top: 60px;
-
-  display: flex;
-  justify-content: flex-end;
-}
+// .footer__socials {
+// }
 
 .footer__socials-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
   gap: 30px;
+
+  margin-top: 60px;
 }
 
 .footer__socials-link {
@@ -112,12 +114,13 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background-color: #f8d24e;
-  color: #84a178;
+  background-color: var(--socials-icon-bcg-color);
+  color: var(--socials-icon-color-default);
+  transition: var(--animation-color);
 
   &:hover,
   &:focus {
-    color: #fcfcfc;
+    color: var(--socials-icon-color-accent);
   }
 }
 
@@ -127,9 +130,6 @@
 
 /* -------------------------------телефон */
 .footer__contact {
-  margin-top: 20px;
-  margin-bottom: 40px;
-
   font-weight: 700;
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -137,10 +137,11 @@
   letter-spacing: 0.02em;
   text-align: right;
 
-  color: #131313;
+  color: var(--text-color-second);
+
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 34px;
     font-size: 14px;
     line-height: calc(26 / 14);
   }
@@ -148,6 +149,8 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: calc(30 / 16);
+
+    margin-top: 40px;
   }
 }
 
@@ -158,7 +161,7 @@
 
   letter-spacing: 0.02em;
 
-  color: #ffffff;
+  color: var(--text-color-primary);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -172,34 +175,45 @@
 }
 
 /* -----------------------------------копірайт */
-
 .copyright {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border-top: 1px solid #e1e1e1;
 
+  margin-top: 40px;
+  padding: 20px 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    padding: 12px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+}
+.copyright__text {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(21 / 14);
 
   letter-spacing: 0.02em;
 
-  color: #7a7a7a;
+  color: var(--text-color-footer);
 
   text-align: center;
 
-  border-top: 1px solid #e1e1e1;
+  max-width: 200px;
+  margin: 0 auto;
+
+  // border-top: 1px solid #e1e1e1;
 
   @media screen and (min-width: 768px) {
     line-height: calc(26 / 14);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-top: 32px;
+    max-width: 300px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 12px;
     line-height: calc(22 / 12);
-    padding-top: 12px;
-    margin-top: 60px;
   }
 }
