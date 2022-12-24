@@ -1,7 +1,7 @@
 
 .about {
 padding-top: 60px;
-background-color: #84a178;
+background-color:var(--bcg-color-second);
 }
 
 .about-title {
@@ -10,8 +10,6 @@ align-items: center;
 flex-direction: column;
 margin: 0 auto;
 margin-bottom: 32px;
-max-width: 210px;
-
 
 @media screen  and (min-width: 768px){
     max-width: 454px;
@@ -29,15 +27,12 @@ font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: calc(22 / 18);
-
 text-align: center;
-
 text-transform: uppercase;
-    
+  
 padding-bottom: 12px;
-margin: 0;
-color: #FCFCFC;
 
+color: var(--text-color-primary);
 
 @media screen and (min-width: 768px) {
 
@@ -64,22 +59,27 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 
-color: #FCFCFC;
- margin: 0;
+margin: 0;
 
-    @media screen and (min-width: 768px) {
-        font-size: 34px;
-        line-height: calc(43 / 34);
-        letter-spacing: 0.06em;
-    }
+color: var(--text-color-primary);
 
-    @media screen and (min-width: 1200px) {
-        
-        line-height: calc(45 / 36);
-        letter-spacing: 0.06em;
-    }
-    
+@media screen and (max-width: 767px){
+    max-width: 210px;
 }
+
+@media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    letter-spacing: 0.06em;
+    }
+
+@media screen and (min-width: 1200px) {
+        
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+    }
+}
+
 .about-centr{
 
 @media screen  and (min-width: 768px){
@@ -90,7 +90,6 @@ color: #FCFCFC;
 .about-right{
 width:220px;
 height: 100%;
-
 
 @media screen and (max-width: 767px){
     margin: 0 auto;
@@ -108,21 +107,16 @@ height: 100%;
         }
 }
 .about-right__subtitle{
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 176%;
-
     letter-spacing: 0.04em;
 
     margin-bottom: 4px;
-    color: #FCFCFC;
-
+    color: var(--text-color-primary);
 
 @media screen and (max-width: 767px) {
     text-align: center;
-        
     }
 @media screen  and (min-width:768px){
     margin-bottom: 8px;
@@ -134,19 +128,15 @@ height: 100%;
 }
 
 .about-right__text{
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 162%;
-    
-
+    letter-spacing: 0.04em;
     margin-bottom: 10px;
-    color: #FCFCFC;
+    color: var(--text-color-primary);
 
 @media screen  and (max-width: 767px){
     text-align: center;
-    letter-spacing: 0.04em;
     }
 
 @media screen and (min-width: 768px){
@@ -155,7 +145,6 @@ height: 100%;
 
 @media screen and (min-width: 768px) {
     line-height: 176%;
-    letter-spacing: 0.04em;
     }
 
 @media screen and (min-width: 1200px) {
@@ -165,21 +154,18 @@ height: 100%;
 }
 
 .about-right__desc {
-
 @media screen and (max-width: 767px) {
     display: none;
     }
 
     @media screen and (min-width: 768px) {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 194%;
-     margin-bottom: 32px;
+    margin-bottom: 32px;
     letter-spacing: 0.04em;
 
-    color: #FCFCFC;
+    color: var(--text-color-primary);
     }
 
     @media screen and (min-width: 1200px) {
@@ -228,23 +214,20 @@ position: absolute;
 }
 
 .about-button {
-font-family: 'Montserrat';
-font-style: normal;
+display: flex;
+align-items: center;
+text-align: center;
 font-weight: 600;
 font-size: 14px;
 line-height: 18px;
     
 width: 164px;
 height: 42px;
-
-display: flex;
-align-items: center;
-text-align: center;
 margin: 0 auto;
-color: #000000;
-background: #F8D24E;
+
+color: var(--btn-text-color-primary);
+background: var(--text-color-accent);
 border-radius: 10px;
-text-align: center;
 
     @media  screen and (min-width: 768px) {
         margin: 0;
