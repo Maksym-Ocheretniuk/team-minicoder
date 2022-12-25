@@ -1,7 +1,5 @@
 .hero {
-  position: relative;
-  // height: 100vh;
-  min-height: 500px;
+  height: 500px;
   padding-top: 50px;
   background: var(--bcg-color-second);
 
@@ -10,22 +8,24 @@
   font-weight: 400;
 
   @media screen and (min-width: 768px) {
-    min-height: 415px;
+    height: 415px;
     padding-top: 80px;
-    // margin-top: 14px;
   }
 
   @media screen and (min-width: 1200px) {
-    min-height: 664px;
+    height: 664px;
     padding-top: 118px;
-    // margin-top: 45px;
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
   }
 
   &__description {
     margin-bottom: 28px;
 
     @media screen and (max-width: 1199.98px) {
-      width: 247px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -34,6 +34,7 @@
   }
 
   &__title {
+    width: 247px;
     margin-bottom: 32px;
     font-family: 'Seymour One';
     font-style: normal;
@@ -44,13 +45,14 @@
     text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
+      width: 367px;
       font-size: 38px;
     }
   }
 
   &__list {
     position: absolute;
-    top: 94px;
+    top: 6px;
     right: 32px;
     display: flex;
     text-align: right;
@@ -64,7 +66,7 @@
     @media screen and (min-width: 1200px) {
       gap: 16px;
       right: 16px;
-      top: 126px;
+      top: 8px;
     }
   }
 
@@ -111,72 +113,106 @@
     }
   }
 
-  &__picture {
+  &__dots {
+    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    height: auto;
+    fill: var(--text-color-accent);
   }
 
-  &__ice-cream-plate {
+  &__dots--mobile {
     @media screen and (max-width: 767.98px) {
-      display: none;
+      display: block;
     }
   }
 
-  &__image-plate {
+  &__dots--tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      display: block;
+    }
+  }
+
+  &__dots--desktop {
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &__ice-cream-plate-section {
+    display: flex;
+    gap: 32px;
+    align-items: center;
     position: absolute;
     left: 32px;
     bottom: 12px;
-
-    @media screen and (max-width: 767.99px) {
+    @media screen and (max-width: 767.98px) {
       display: none;
     }
 
     @media screen and (min-width: 1200px) {
       left: 16px;
+      gap: 16px;
       bottom: 65px;
     }
   }
 
-  &__ice-cream-plate-section {
-    position: absolute;
-    left: 216px;
-    bottom: 24px;
-
-    width: 150px;
-    font-size: 12px;
-    line-height: 1.4;
-
-    @media screen and (max-width: 767.99px) {
-      display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-      left: 257px;
-      bottom: 103px;
-    }
+  &__image-plate {
+    animation: scaleUp 0.8s;
+    transform: scale(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
   }
 
   &__ice-cream-plate-text {
+    width: 150px;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+    padding-top: 26px;
+  }
+
+  &__ice-cream-plate-text p {
     margin-bottom: 12px;
   }
 
   &__image-ice-cream-cone {
     position: absolute;
     bottom: 0;
-    left: 83px;
+    right: 50%;
+    margin-right: -74px;
+    transform: scale(0);
+
+    transform-origin: bottom;
+    animation: scaleUp 0.8s;
+    animation-delay: 0.05s;
+    animation-fill-mode: forwards;
 
     @media screen and (min-width: 768px) {
-      left: 408px;
+      right: 92px;
+      margin-right: 0;
+      transform: scale(0);
     }
 
     @media screen and (min-width: 1200px) {
-      left: 652px;
+      right: 92px;
     }
   }
 }
 
 .arrov-right {
   fill: currentColor;
+}
+
+@keyframes scaleUp {
+  60% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

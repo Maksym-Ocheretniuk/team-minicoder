@@ -1,63 +1,46 @@
-<section class="hero container">
-  <div class="hero__description">
-    <h1 class="title hero__title">ice cream made with passion</h1>
-    <ul class="list hero__buttons">
-      <li class="hero__button">
-        <button type="button"><a href="">Products</a></button>
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__description">
+      <h1 class="title hero__title">ice cream made with passion</h1>
+      <ul class="list hero__buttons">
+        <li class="hero__button">
+          <a href="">Products</a>
+        </li>
+        <li class="hero__button">
+          <a href="">How it’s made?</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="list hero__list">
+      <li class="hero__item">
+        <p class="hero__text">
+          <span class="hero__item--number">16 </span> cafes
+        </p>
       </li>
-      <li class="hero__button">
-        <button type="button"><a href="">How it’s made?</a></button>
+      <li class="hero__item">
+        <p><span class="hero__item--number">23 </span> food trucks</p>
       </li>
     </ul>
-  </div>
-  <ul class="list hero__list">
-    <li class="hero__item">
-      <p class="hero__text">
-        <span class="hero__item--number">16 </span> cafes
-      </p>
-    </li>
-    <li class="hero__item">
-      <p><span class="hero__item--number">23 </span> food trucks</p>
-    </li>
-  </ul>
-  <picture class="hero__picture">
-    <!-- Desktop screen -->
-    <source
-      media="(min-width: 1200px)"
-      srcset="
-        ../src/images/hero/dots/dots_1200.png 1x,
-        ../src/images/hero/dots/dots_2400.png 2x
-      "
-      type="image/png"
-    />
-    <!-- Tablet screen -->
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        ../src/images/hero/dots/dots_768.png  1x,
-        ../src/images/hero/dots/dots_1536.png 2x
-      "
-      type="image/png"
-    />
-    <!-- Mobile screen -->
-    <source
-      media="(max-width: 767px)"
-      srcset="
-        ../src/images/hero/dots/dots_320.png 1x,
-        ../src/images/hero/dots/dots_640.png 2x
-      "
-      type="image/png"
-    />
-    <img
-      class="hero__image-dots"
-      src="../src/images/hero/dots/dots_320.png"
-      alt="Dots"
-      loading="lazy"
-    />
-  </picture>
+    <!-- Mobile dots -->
+    <svg class="hero__dots hero__dots--mobile" width="320" height="50">
+      <use
+        href="../src/images/hero/svg-elements/svg-elements.svg#dots-mobile"
+      ></use>
+    </svg>
+    <!-- Tablet dots -->
+    <svg class="hero__dots hero__dots--tablet" width="768" height="70">
+      <use
+        href="../src/images/hero/svg-elements/svg-elements.svg#dots-tablet"
+      ></use>
+    </svg>
+    <!-- Desktop dots -->
+    <svg class="hero__dots hero__dots--desktop" width="1200" height="383">
+      <use
+        href="../src/images/hero/svg-elements/svg-elements.svg#dots-desktop"
+      ></use>
+    </svg>
 
-  <div class="hero__ice-cream-plate">
-    <div class="hero__ice-cream-plate-image">
+    <div class="hero__ice-cream-plate-section">
       <picture class="hero__image-plate">
         <!-- Desktop screen -->
         <source
@@ -83,50 +66,52 @@
           loading="lazy"
         />
       </picture>
+      <div class="hero__ice-cream-plate-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="arrov-right" width="40" height="16">
+          <use
+            href="../src/images/hero/svg-elements/svg-elements.svg#arrow-right"
+          ></use>
+        </svg>
+      </div>
     </div>
-    <div class="hero__ice-cream-plate-section">
-      <p class="hero__ice-cream-plate-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <svg class="arrov-right" width="40" height="16">
-        <use href="../src/images/hero/svg/arrov-right.svg#arrow-right"></use>
-      </svg>
-    </div>
-  </div>
 
-  <picture class="hero__image-ice-cream-cone">
-    <!-- Desktop screen -->
-    <source
-      media="(min-width: 1200px)"
-      srcset="
-        ../src/images/hero/ice_cream/ice_cream_456.png 1x,
-        ../src/images/hero/ice_cream/ice_cream_912.png 2x
-      "
-      type="image/png"
-    />
-    <!-- Tablet screen -->
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        ../src/images/hero/ice_cream/ice_cream_268.png 1x,
-        ../src/images/hero/ice_cream/ice_cream_536.png 2x
-      "
-      type="image/png"
-    />
-    <!-- Mobile screen -->
-    <source
-      media="(max-width: 767px)"
-      srcset="
-        ../src/images/hero/ice_cream/ice_cream_177.png 1x,
-        ../src/images/hero/ice_cream/ice_cream_354.png 2x
-      "
-      type="image/png"
-    />
-    <img
-      src="../src/images/hero/ice_cream/ice_cream_177.png"
-      alt="Dots"
-      loading="lazy"
-    />
-  </picture>
+    <picture class="hero__image-ice-cream-cone">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../src/images/hero/ice_cream/ice_cream_456.png 1x,
+          ../src/images/hero/ice_cream/ice_cream_912.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/hero/ice_cream/ice_cream_268.png 1x,
+          ../src/images/hero/ice_cream/ice_cream_536.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/hero/ice_cream/ice_cream_177.png 1x,
+          ../src/images/hero/ice_cream/ice_cream_354.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="../src/images/hero/ice_cream/ice_cream_177.png"
+        alt="Dots"
+        loading="lazy"
+      />
+    </picture>
+  </div>
 </section>
