@@ -168,14 +168,22 @@
   }
 
   &__ice-cream-plate-text {
-    width: 150px;
     font-size: 12px;
     line-height: calc(17 / 12);
     padding-top: 26px;
   }
 
   &__ice-cream-plate-text p {
+    width: 150px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      width: 200px;
+      margin-top: 30px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: calc(20 / 14);
+    }
   }
 
   &__image-ice-cream-cone {
