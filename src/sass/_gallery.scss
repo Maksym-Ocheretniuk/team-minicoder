@@ -1,0 +1,84 @@
+.gallery {
+  background-image: linear-gradient(to bottom, var(--bcg-color-second) 30px, transparent 30px);
+
+
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 30px, transparent  30px);
+  }
+
+  @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent  144px);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent  144px);
+  }
+  @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px);
+  }
+}
+
+.gallery_list {
+    position: relative;
+    text-align: center;
+}
+
+.gallery_img {
+  top: 0;
+  animation-name: galleryFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  border-radius: 6px;
+  object-fit: cover;
+  max-height: 130px;
+  width: 100%;
+  opacity: 0;
+
+  &:not(:first-child){  
+    position: absolute;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-height: 327px;
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 422px;
+    border-radius: 24px;
+  }
+}
+
+@keyframes galleryFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.gallery_img:nth-of-type(1) {
+  animation-delay: 0;
+}
+.gallery_img:nth-of-type(2) {
+  animation-delay: 3s;
+}
+.gallery_img:nth-of-type(3) {
+  animation-delay: 6s;
+}
