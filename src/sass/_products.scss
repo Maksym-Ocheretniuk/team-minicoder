@@ -7,16 +7,16 @@
         background-size: cover;
         background-position: center;
 //Phone screen
-        background-image: url(../images/products/fon1_s@1x.jpg);
+    //background-image: url(../images/products/fon1_s@1x.jpg);
 
-        @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                background-image: url(../images/products/fon1_s@2x.jpg);
-        }
+        //@media (min-device-pixel-ratio: 2),
+           //   (min-resolution: 192dpi),
+            //  (min-resolution: 2dppx) {
+            //  background-image: url(../images/products/fon1_s@2x.jpg);
+       // }
 
 //Tablet screen
-@media screen and (min-width: 768px) {
+//@media screen and (min-width: 768px) {
                 background-image: url(../images/products/fon2_m@1x.jpg);
 
         @media (min-device-pixel-ratio: 2),
@@ -24,23 +24,20 @@
                 (min-resolution: 2dppx) {
                         background-image: url(../images/products/fon2_m@2x.jpg);
                 }
-        }
+      //  }
 
 //Desktop screen
-@media screen and (min-width: 1200px) {
-                background-image: url(../images/products/fon3_l@1x.jpg);
+//@media screen and (min-width: 1200px) {
+               // background-image: url(../images/products/fon3_l@1x.jpg);
 
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                        background-image: url(../images/products/fon3_l@2x.jpg);
-                }
-        }
+               // @media (min-device-pixel-ratio: 2),
+               // (min-resolution: 192dpi),
+               // (min-resolution: 2dppx) {
+                     //   background-image: url(../images/products/fon3_l@2x.jpg);
+               // }
+       // }
 
-        @media screen and (min-width: 1200px) {
-                
-                
-        }
+      
         
 }
 
