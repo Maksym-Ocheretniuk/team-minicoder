@@ -1,0 +1,147 @@
+// mobile menu
+.header__site-nav {
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.open__menu-icon {
+  fill: var(--text-color-primary);
+}
+
+.menu-toggle {
+  display: flex;
+  background-color: inherit;
+
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+
+.header__menu {
+  display: flex;
+}
+
+.header__site-nav {
+  gap: 28px;
+}
+
+.site-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  transition: color var(--animation-base);
+  color: var(--text-color-primary);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 999;
+
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-right: 20px;
+  padding-bottom: 64px;
+
+  background-color: var(--bcg-color-second);
+
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-right: 32px;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+// mobile menu inside
+.mobile__menu_inside {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+}
+
+.close__menu-icon {
+  fill: var(--modal-bcg-color-primary);
+}
+
+.mobile__nav {
+  margin-bottom: 76px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+}
+
+.mobile__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
+}
+
+.mobile__menu-link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21;
+
+  color: var(--text-color-primary);
+}
+
+.made {
+  color: var(--btn-text-color-second);
+}
+
+.mobile__menu-button {
+  width: 152px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
