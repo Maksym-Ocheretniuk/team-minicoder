@@ -1,7 +1,20 @@
-$(document).ready(function () {
-  $('.reviews__sliders').slick({
-    arrows: false,
-    dots: true,
-    speed: 750,
-  });
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  //   direction: 'vertical',
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // что-бы сделать пагинацию кликабельной
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 });

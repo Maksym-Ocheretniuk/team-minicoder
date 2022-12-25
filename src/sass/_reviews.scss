@@ -84,55 +84,71 @@
     /* or 30px */
   }
 }
-
-//for slides
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
+.swiper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  // outline: 2px solid rgb(178, 255, 71);
 }
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-}
-// /* Точки (булиты) */
-.slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 32px;
-}
-.slick-dots li {
-  list-style: none;
-  margin: 0 10px;
-}
-// /* Активная точка */
-.slick-dots li.slick-active {
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: var(--bcg-color-second);
-}
-.slick-dots li {
+.swiper-pagination-bullet {
   $color-disactive: rgba(217, 217, 217, 1);
-  font-size: 0;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: $color-disactive;
-}
-// /* Элемент точки */
-// .slick-dots li button {
-.slick-dots button {
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: transparent;
-  //   background-color: $color-disactive;
+  background-color: $color-disactive !important;
 }
 
-// for slides
+.swiper-pagination-bullet-active {
+  background-color: var(--bcg-color-second) !important;
+}
+
+// //for slides
+// /* Ограничивающая оболочка */
+// .slick-list {
+//   overflow: hidden;
+// }
+// /* Лента слайдов */
+// .slick-track {
+//   display: flex;
+// }
+// // /* Точки (булиты) */
+// .slick-dots {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 32px;
+// }
+// .slick-dots li {
+//   list-style: none;
+//   margin: 0 10px;
+// }
+// // /* Активная точка */
+// .slick-dots li.slick-active {
+//   font-size: 0;
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+//   border-color: transparent;
+//   background-color: var(--bcg-color-second);
+// }
+// .slick-dots li {
+//   $color-disactive: rgba(217, 217, 217, 1);
+//   font-size: 0;
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+//   border-color: transparent;
+//   background-color: $color-disactive;
+// }
+// // /* Элемент точки */
+// // .slick-dots li button {
+// .slick-dots button {
+//   font-size: 0;
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+//   border-color: transparent;
+//   background-color: transparent;
+//   //   background-color: $color-disactive;
+// }
+
+// // for slides
