@@ -1,0 +1,79 @@
+.modal-menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #85a279;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 12px;
+    left: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/logo/logo_sm-@1x.png');
+    width: 40px;
+    height: 37px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/logo/logo_sm-@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 20px;
+      left: 32px;
+      width: 48px;
+      height: 44px;
+      background-image: url('../images/logo/logo_md-@1x.png');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/logo/logo_md-@2x.png');
+      }
+    }
+  }
+
+  .mobile-menu {
+    margin-top: 100px;
+    margin-bottom: auto;
+    @media screen and (min-width: 768px) {
+      margin-top: 140px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: calc(39 / 32);
+      color: #fcfcfc;
+      &:hover,
+      &:focus {
+        border: none;
+        outline: none;
+        color: #131313;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+      }
+    }
+  }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
