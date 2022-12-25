@@ -1,8 +1,11 @@
 body {
   background-color: var(--bcg-color-primary);
   font-family: 'Montserrat', Verdana, sans-serif;
-  color: var(--text-color-primary);
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: 0.04em;
+
+  color: var(--text-color-primary);
 
   overflow-x: hidden;
 }
@@ -11,7 +14,7 @@ body {
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 30px;
-  line-height: calc(30 / 38);
+  line-height: calc(38 / 30);
   text-align: center;
   text-transform: uppercase;
 
