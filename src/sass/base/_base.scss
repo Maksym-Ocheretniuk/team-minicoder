@@ -1,17 +1,52 @@
 body {
   background-color: var(--bcg-color-primary);
   font-family: 'Montserrat', Verdana, sans-serif;
-  color: var(--text-color-primary);
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: 0.04em;
 
+  color: var(--text-color-primary);
+
   overflow-x: hidden;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(./images/body/backgroud_mobile_sm@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(./images/body/backgroud_mobile_sm@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(./images/body/background_tablet_md@1x.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 481px) and (min-resolution: 192dpi),
+    screen and (min-width: 481px) and (min-resolution: 2dppx) {
+    background-image: url(./images/body/background_tablet_md@2x.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(./images/body/backgroud_desktop_lg@1x.jpg);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 767px) and (min-resolution: 192dpi),
+    screen and (min-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(./images/body/backgroud_desktop_lg@2x.jpg);
+  }
 }
 
 .section__title {
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 30px;
-  line-height: calc(30 / 38);
+  line-height: calc(38 / 30);
   text-align: center;
   text-transform: uppercase;
 
