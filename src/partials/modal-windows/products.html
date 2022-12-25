@@ -1,0 +1,82 @@
+<div class="backdrop backdrop--hidden" data-modal>
+    <div class="modal modal--products">
+        <button data-modal-close class="modal__button">
+            <svg class="" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-btn-close"></use>
+            </svg>
+        </button>
+
+        <h2 class="modal__title modal__title--prodects">
+            Chocolate icecream
+        </h2>
+
+        <div class="products__logo">
+            <img class="products__img"
+                srcset="./images/modal-windows/products/132-1.png 1x, ./images/modal-windows/products/132-2.png 2x"
+                src="./images/modal-windows/products/132-1.png" alt="icecream">
+        </div>
+
+        <div class="composition">
+            <div class="composition__oval">
+                <div class="composition__circle">
+                    <div class="composition__volume">320</div>
+                </div>
+                <div class="composition__text">kcal</div>
+            </div>
+            <div class="composition__oval">
+                <div class="composition__circle">
+                    <div class="composition__volume">4g</div>
+                </div>
+                <div class="composition__text">Prote...</div>
+            </div>
+            <div class="composition__oval">
+                <div class="composition__circle">
+                    <div class="composition__volume">8,2g</div>
+                </div>
+                <div class="composition__text">Fats</div>
+            </div>
+            <div class="composition__oval">
+                <div class="composition__circle">
+                    <div class="composition__volume">40,4g</div>
+                </div>
+                <div class="composition__text">Carbs</div>
+            </div>
+        </div>
+
+        <div class="ingredients">
+            <h2 class="modal__text modal__text--products">
+                Ingredients
+            </h2>
+            
+            <ul class="modal__text">
+                <li class="ingredients__list ingredients__list--padding">
+                    Milk<span>100ml</span>
+                </li>
+                <li class="ingredients__list ingredients__list--padding">
+                    Belgian chocolate <span>20g</span>
+                </li>
+                <li class="ingredients__list ingredients__list--padding">
+                    Cream <span>150 ml</span>
+                </li>
+                <li class="ingredients__list ingredients__list--padding">
+                    Cocoa powder <span>30g</span>
+                </li>
+                <li class="ingredients__list ingredients__list--padding">
+                    Sugar <span>40g</span>
+                </li>
+                <li class="ingredients__list ingredients__list--padding">
+                    Vanilla sugar <span>10g</span>
+                </li>
+            </ul>
+        </div>
+
+        <form>
+            <ul class="blank">
+                <li><input class="label label--products" type="text" required placeholder="Name" pattern="[a-z]{1,15}"></li>
+                <li><input class="label label--products" type="tel" required placeholder="Phone" pattern="[+380][0-9]{9}"></li>                
+                <li><textarea class="textarea textarea--products" name="Comment" placeholder="Comment"></textarea></li>
+            </ul>
+            <button class="button__modal" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
