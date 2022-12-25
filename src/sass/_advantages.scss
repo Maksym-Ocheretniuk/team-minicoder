@@ -118,16 +118,15 @@ a {
       display: inline-block;
       width: 50px;
       height: 50px;
-      margin-bottom: 16px;
-      background-image: url('../images/cow-mob-.png');
-      background-repeat: no-repeat;
-      background-size: contain;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/cow-mob-2x.png');
-      }
+      border-radius: 50%;
+      background-color: #f8d24e;
+      margin-bottom: 16px;
+      background-image: url('../images/cow.svg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+
       @media screen and (min-width: 768px) {
         margin-bottom: 32px;
       }
@@ -143,16 +142,14 @@ a {
       display: inline-block;
       width: 50px;
       height: 50px;
+      border-radius: 50%;
+      background-color: #f8d24e;
       margin-bottom: 16px;
-      background-image: url('../images/weight-mob.png');
+      background-image: url('../images/weight.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: auto;
+      background-position: center;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/weight-mob-2x.png');
-      }
       @media screen and (min-width: 768px) {
         margin-bottom: 32px;
       }
@@ -168,16 +165,14 @@ a {
       display: inline-block;
       width: 50px;
       height: 50px;
+      border-radius: 50%;
+      background-color: #f8d24e;
       margin-bottom: 16px;
-      background-image: url('../images/ice-crema-mob.png');
+      background-image: url('../images/ice-crema.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: auto;
+      background-position: center;
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/ice-crema-mob-2x.png');
-      }
       @media screen and (min-width: 768px) {
         margin-bottom: 32px;
       }
