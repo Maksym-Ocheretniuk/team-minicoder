@@ -57,50 +57,34 @@ address {
     font-size: 12px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.04em;
     color: var(--text-color-second);
     padding: 4px 22px;
     text-transform: uppercase;
-    max-width: 80px;
-    height: 22px;
+    width: max-content;
     border-radius: 4px;
     background-color: var(--text-color-accent);
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) {
-        width: 80px;
-    }
 
     @media screen and (min-width:768px) {
         font-size: 16px;
         line-height: 1.37;
         padding: 4px 13px;
-        max-width: 73px;
-        height: 30px;
         border-radius: 6px;
         margin-bottom: 32px;
     }
 
     @media screen and (min-width:1200px) {
-        max-width: 76px;
         padding: 4px 14px;
     }
 
 }
 
 .contacts__card-title--foodtrack {
-    max-width: 130px;
+    width: max-content;
 
-    @media screen and (min-width:480px) {
-        min-width: 130px;
-    }
-
-    @media screen and (min-width:768px) {
-        min-width: 138px;
-    }
-
-    @media screen and (min-width:1200px) {
-        min-width: 148px;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding: 4px 10px;
     }
 }
 
@@ -108,30 +92,27 @@ address {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
-    letter-spacing: 0.04em;
     color: var(--text-color-second);
     margin-bottom: 8px;
 
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         font-size: 14px;
         line-height: 1.85;
         margin-bottom: 12px;
     }
-
+    
     @media screen and (min-width:1200px) {
         font-size: 16px;
         line-height: 1.87;
+        margin-bottom: 8px;
     }
 }
-
 .contacts_map {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
-    letter-spacing: 0.04em;
     color: var(--text-color-contacts-adr);
-    height: 40px;
 
     @media screen and (min-width:768px) {
         font-size: 14px;
