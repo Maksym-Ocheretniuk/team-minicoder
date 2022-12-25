@@ -10,24 +10,24 @@
         background-image: url(../images/products/fon1_s@1x.jpg);
 
         @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                 background-image: url(../images/products/fon1_s@2x.jpg);
         }
 
-        //Tablet screen
-        @media screen and (min-width: 768px) {
+//Tablet screen
+@media screen and (min-width: 768px) {
                 background-image: url(../images/products/fon2_m@1x.jpg);
 
-                @media (min-device-pixel-ratio: 2),
+        @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                         background-image: url(../images/products/fon2_m@2x.jpg);
                 }
         }
 
-        //Desktop screen
-        @media screen and (min-width: 1200px) {
+//Desktop screen
+@media screen and (min-width: 1200px) {
                 background-image: url(../images/products/fon3_l@1x.jpg);
 
                 @media (min-device-pixel-ratio: 2),
@@ -80,11 +80,11 @@
         margin-bottom: 60px;
 
 
-        @media screen and (min-width: 768px)and(max-width: 1199px) {
+@media screen and (min-width: 768px)and(max-width: 1199px) {
                 gap: 16px;
         }
 
-        @media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {}
 }
 
 
@@ -101,7 +101,7 @@
         background-image: url(../images/products/ellips.png);
         background-repeat: no-repeat;
         background-position: top -100px center;
-        @media screen and (min-width: 768px)and(max-width: 1199px) {
+@media screen and (min-width: 768px)and(max-width: 1199px) {
                 width: 224px;
                 height: 428px;
                 padding-left: 26px;
@@ -111,7 +111,7 @@
 
         }
 
-        @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
                 width: 370px;
                 height: 536px;
@@ -136,12 +136,11 @@
         content: "";
         transform: translateY(-50%);
 
-        @media screen and (min-width: 768px)and(max-width: 1199px) {
+@media screen and (min-width: 768px)and(max-width: 1199px) {
                 transform: translate(-7%, -50%);
-
         }
 
-        @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
                 width: 302px;
                 height: 302px;
                 background-image: url(../images/products/ice_l.png);
@@ -193,17 +192,17 @@
         content: " ";
         transform: translateY(-50%);
 
-        @media screen and (min-width: 768px)and(max-width: 1199px) {
-                transform: translate(-7%, -50%);
+@media screen and (min-width: 768px)and(max-width: 1199px) {
+        transform: translate(-7%, -50%);
 
         }
 
-        @media screen and (min-width: 1200px) {
-                width: 302px;
-                height: 302px;
-                background-image: url(../images/products/cofe_l.png);
-                content: "";
-                transform: translate(-10%, -60%);
+@media screen and (min-width: 1200px) {
+        width: 302px;
+        height: 302px;
+        background-image: url(../images/products/cofe_l.png);
+        content: "";
+        transform: translate(-10%, -60%);
         }
 }
 
@@ -262,8 +261,7 @@
 }
 
 .products__title {
-        font-family: 'Montserrat';
-        font-style: normal;
+        
         font-weight: 700;
         font-size: 20px;
         line-height: calc(24/20);
@@ -274,7 +272,6 @@
         margin-top: -60px;
         margin-bottom: 40px;
 }
-
 
 .products__info {
         
