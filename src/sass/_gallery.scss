@@ -1,28 +1,39 @@
 .gallery {
-  background-image: linear-gradient(to bottom, var(--bcg-color-second) 30px, transparent 30px);
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(to bottom, var(--bcg-color-second) 30px, transparent 30px), url(../images/gallery/Backgroud_mobile_sm@1x.jpg);
+  
 
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 30px, transparent  30px);
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 30px, transparent 30px), url(../images/gallery/Backgroud_mobile_sm@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent  144px);
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent 144px), url(../images/gallery/Background_tablet_md@1x.jpg);
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent  144px);
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent 144px), url(../images/gallery/Background_tablet_md@2x.jpg);
   }
   @media screen and (min-width: 1200px) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px);
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px), url(../images/gallery/Backgroud_desktop_lg@1x.jpg);
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px);
+      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px), url(../images/gallery/Backgroud_desktop_lg@2x.jpg);
   }
 }
 
 .gallery_list {
     position: relative;
+    padding-bottom: 80px;
     text-align: center;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 140px;
+  }
 }
 
 .gallery_img {
@@ -31,11 +42,10 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 10s;
-  border-radius: 6px;
+  border-radius: 8px;
   object-fit: cover;
   max-height: 130px;
   width: 100%;
-  opacity: 0;
 
   &:not(:first-child){  
     position: absolute;
@@ -54,31 +64,28 @@
 
 @keyframes galleryFadeInOut {
   0% {
-    opacity: 0;
+    opacity:1;
   }
-  15% {
-    opacity: 1;
+  11.11% {
+    opacity:1;
   }
-  22% {
-    opacity: 1;
+  33.33% {
+    opacity:0;
   }
-  46% {
-    opacity: 1;
-  }
-  58% {
-    opacity: 0;
+  44.44% {
+    opacity:0;
   }
   100% {
-    opacity: 0;
+    opacity:1;
   }
 }
 
 .gallery_img:nth-of-type(1) {
-  animation-delay: 0;
+  animation-delay: 6s;
 }
 .gallery_img:nth-of-type(2) {
   animation-delay: 3s;
 }
 .gallery_img:nth-of-type(3) {
-  animation-delay: 6s;
-}
+  animation-delay: 0;
+ }
