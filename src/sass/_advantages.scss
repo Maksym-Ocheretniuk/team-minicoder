@@ -49,7 +49,7 @@ a {
 }
 
 .advantages {
-  background-color: #84a178;
+  background-color: var(--btn-text-color-second);
   padding-top: 50px;
   padding-bottom: 64px;
   margin: 0;
@@ -120,9 +120,9 @@ a {
       height: 50px;
 
       border-radius: 50%;
-      background-color: #f8d24e;
+      background-color: var(--socials-icon-bcg-color);
       margin-bottom: 16px;
-      background-image: url('../images/cow.svg');
+      background-image: url('../images/advantages/cow.svg');
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center;
@@ -143,9 +143,9 @@ a {
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: #f8d24e;
+      background-color: var(--socials-icon-bcg-color);
       margin-bottom: 16px;
-      background-image: url('../images/weight.svg');
+      background-image: url('../images/advantages/weight.svg');
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center;
@@ -166,9 +166,9 @@ a {
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: #f8d24e;
+      background-color: var(--socials-icon-bcg-color);
       margin-bottom: 16px;
-      background-image: url('../images/ice-crema.svg');
+      background-image: url('../images/advantages/ice-crema.svg');
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center;
