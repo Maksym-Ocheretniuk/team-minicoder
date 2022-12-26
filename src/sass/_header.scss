@@ -1,0 +1,32 @@
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bcg-color-second);
+}
+
+// logo
+
+.header__logo{
+width: 40px;
+height: 37px;
+
+  @media screen and (min-width:768px) {
+    width: 48px;
+    height: 44px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+.header__button {
+  display: none;
+  @media screen and (min-width:768px) {
+    display: block;
+
+    margin-left: 32px;
+  }
+}
