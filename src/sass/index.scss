@@ -1,0 +1,35 @@
+
+@import './common';
+@import './example';
+
+// utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// base style
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+// @import './base/buttons';
+
+// sections style
+@import './header';
+@import './hero';
+@import './products';
+@import './about';
+@import './advantages';
+@import './gallery';
+@import './reviews';
+@import './contacts';
+@import './footer';
+
+// modal window
+// Кнопка "Buy now"
+@import '../sass/modal/modal-product-card';
+
+// mobile menu
+// ---------------------------------------------------------
+// @import './utils/mobile-menu';
+
+// mobile style
+// @import "./";
