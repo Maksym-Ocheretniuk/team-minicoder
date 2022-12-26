@@ -9,6 +9,7 @@
 @import './base/base';
 @import './base/reset';
 @import './base/container';
+@import './base/buttons';
 
 // sections style
 @import './header';
@@ -22,7 +23,8 @@
 @import './footer';
 
 // modal window
-// @import './';
+// Кнопка "Buy now"
+@import '../sass/modal/modal-product-card';
 
 // mobile style
 // @import "./";
