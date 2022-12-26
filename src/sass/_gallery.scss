@@ -1,23 +1,14 @@
 .gallery {
-  background-image: linear-gradient(to bottom, var(--bcg-color-second) 32px, transparent 32px);
-
-
-  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 32px, transparent  32px);
-  }
+  margin-top: -32px;
 
   @media screen and (min-width: 768px) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent  144px);
+    margin-top: -100px;
   }
-  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 144px, transparent  144px);
-  }
+
   @media screen and (min-width: 1200px) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px);
+    margin-top: -98px;
   }
-  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, var(--bcg-color-second) 98px, transparent 98px);
-  }
+
 }
 
 .gallery_list {
