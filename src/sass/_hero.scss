@@ -1,0 +1,363 @@
+.hero {
+  height: 500px;
+  padding-top: 50px;
+  background: var(--bcg-color-second);
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    height: 415px;
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+    padding-top: 118px;
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
+  &__description {
+    margin-bottom: 28px;
+
+    @media screen and (max-width: 1199.98px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 367px;
+    }
+  }
+
+  &__title {
+    width: 247px;
+    margin-bottom: 32px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 367px;
+      font-size: 38px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 6px;
+    right: 32px;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 16px;
+      right: 16px;
+      top: 8px;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    @media screen and (min-width: 768px) {
+      font-size: 8px;
+      line-height: calc(10 / 8);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+
+    &--number {
+      margin-bottom: 4px;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #131313;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 46;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      gap: 16px;
+    }
+  }
+
+  &__dots {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    fill: var(--text-color-accent);
+  }
+
+  &__dots--mobile {
+    @media screen and (max-width: 767.98px) {
+      display: block;
+    }
+  }
+
+  &__dots--tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      display: block;
+    }
+  }
+
+  &__dots--desktop {
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &__ice-cream-plate-section {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    position: absolute;
+    left: 32px;
+    bottom: 12px;
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 16px;
+      gap: 16px;
+      bottom: 65px;
+    }
+  }
+
+  &__image-plate {
+    animation: scaleUp 0.8s;
+    transform: scale(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  &__ice-cream-plate-text {
+    font-size: 12px;
+    line-height: calc(17 / 12);
+    padding-top: 26px;
+  }
+
+  &__ice-cream-plate-text p {
+    width: 150px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      width: 200px;
+      margin-top: 30px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: calc(20 / 14);
+    }
+  }
+
+  &__image-ice-cream-cone {
+    position: absolute;
+    bottom: 0;
+    right: 43%;
+    margin-right: -74px;
+    transform: scale(0);
+
+    transform-origin: bottom;
+    animation: scaleUp 0.8s;
+    animation-delay: 0.05s;
+    animation-fill-mode: forwards;
+
+    @media screen and (min-width: 385px) {
+      right: 47%;
+      margin-right: -74px;
+      transform: scale(0);
+    }
+
+    @media screen and (min-width: 415px) {
+      right: 48%;
+      margin-right: -74px;
+      transform: scale(0);
+    }
+
+    @media screen and (min-width: 420px) {
+      right: 49%;
+      margin-right: -74px;
+      transform: scale(0);
+    }
+
+    @media screen and (min-width: 455px) {
+      right: 50%;
+      margin-right: -74px;
+      transform: scale(0);
+    }
+
+    @media screen and (min-width: 768px) {
+      right: 92px;
+      margin-right: 0;
+      transform: scale(0);
+    }
+
+    @media screen and (min-width: 1200px) {
+      right: 92px;
+    }
+  }
+}
+
+.arrov-right {
+  fill: currentColor;
+}
+
+// Стилі для кнопок
+// ==========добавляти ".btn" до кожної кнопки, дефолтні значення=================
+.btn {
+  height: 42px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8d24e;
+  color: #000000;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  gap: 4px;
+  cursor: pointer;
+  transition-property: background-color, fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    border-radius: 10px;
+  }
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    outline: none;
+    color: #fcfcfc;
+  }
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+  }
+  // =========кнопка "Products"==============
+  &__products {
+    width: 108px;
+    height: 38px;
+    background-color: transparent;
+    border: 2px solid #f8d24e;
+    @media screen and (min-width: 1200px) {
+      width: 134px;
+      height: 42px;
+    }
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #0a8817;
+    }
+    &:focus {
+      background-color: transparent;
+      color: #fcfcfc;
+    }
+    &:disabled {
+      background-color: transparent;
+      color: #000000;
+      border: 2px solid #ababab;
+    }
+  }
+  // =========кнопка "how-made"==============
+  &__how-made {
+    width: 114px;
+    // height: 24px;
+    padding: 0;
+    border: none;
+    color: #f8d24e;
+    text-decoration: underline;
+    background-color: transparent;
+
+    @media screen and (min-width: 1200px) {
+      width: 144px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: #0a8817;
+    }
+    &:focus {
+      background-color: transparent;
+      outline: none;
+      color: #fcfcfc;
+    }
+    &:disabled {
+      background-color: transparent;
+      color: #ababab;
+    }
+  }
+  &__product {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    color: #131313;
+    &:hover,
+    &:focus {
+      color: #f8d24e;
+    }
+    @media screen and(min-width:768px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@keyframes scaleUp {
+  60% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

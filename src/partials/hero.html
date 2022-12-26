@@ -1,0 +1,111 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__description">
+      <h1 class="title hero__title">ice cream made with passion</h1>
+      <ul class="list hero__buttons">
+        <li class="hero__button">
+          <a href="#products" class="link btn btn__products">Products</a>
+        </li>
+        <li class="hero__button">
+          <a href="#howit’smade" class="link btn btn__how-made"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
+    </div>
+    <ul class="list hero__list">
+      <li class="hero__item">
+        <p class="hero__text">
+          <span class="hero__item--number">16 </span> cafes
+        </p>
+      </li>
+      <li class="hero__item">
+        <p><span class="hero__item--number">23 </span> food trucks</p>
+      </li>
+    </ul>
+    <!-- Mobile dots -->
+    <svg class="hero__dots hero__dots--mobile" width="320" height="50">
+      <use href="../src/images/icons.svg#icon-dots-mobile"></use>
+    </svg>
+    <!-- Tablet dots -->
+    <svg class="hero__dots hero__dots--tablet" width="768" height="70">
+      <use href="../src/images/icons.svg#icon-dots-tablet"></use>
+    </svg>
+    <!-- Desktop dots -->
+    <svg class="hero__dots hero__dots--desktop" width="1200" height="383">
+      <use href="../src/images/icons.svg#icon-dots-desktop"></use>
+    </svg>
+
+    <div class="hero__ice-cream-plate-section">
+      <picture class="hero__image-plate">
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../src/images/hero/many_ice_cream/many_ice_cream_225.png 1x,
+            ../src/images/hero/many_ice_cream/many_ice_cream_450.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/hero/many_ice_cream/many_ice_cream_152.png 1x,
+            ../src/images/hero/many_ice_cream/many_ice_cream_304.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="../src/images/hero/many_ice_cream/many_ice_cream_152.png"
+          alt="Ice cream on plate"
+          loading="lazy"
+        />
+      </picture>
+      <div class="hero__ice-cream-plate-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="arrov-right" width="40" height="16">
+          <use href="../src/images/icons.svg#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+
+    <picture class="hero__image-ice-cream-cone">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../src/images/hero/ice_cream/ice_cream_456.png 1x,
+          ../src/images/hero/ice_cream/ice_cream_912.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/hero/ice_cream/ice_cream_268.png 1x,
+          ../src/images/hero/ice_cream/ice_cream_536.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/hero/ice_cream/ice_cream_177.png 1x,
+          ../src/images/hero/ice_cream/ice_cream_354.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="../src/images/hero/ice_cream/ice_cream_177.png"
+        alt="Ice cream cone"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
