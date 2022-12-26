@@ -1,10 +1,10 @@
 .reviews {
-  margin-bottom: 40px;
+  padding-top: 80px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 80px;
+    padding-top: 100px;
   }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 100px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
   }
 
   //   outline: 2px solid rgb(255, 71, 172);
@@ -24,7 +24,12 @@
   overflow: hidden;
   //   outline: 2px solid rgb(255, 71, 172);
 }
-
+.reviews__img {
+  display: block;
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
 .reviews__comment--position {
   width: 100%;
   height: auto;
@@ -51,12 +56,13 @@
   background-color: var(--bcg-color-second);
   color: var(--text-color-primary);
 
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   line-height: calc(31 / 12);
   /* or 31px */
   text-align: center;
   @media screen and (min-width: 768px) {
+    font-weight: 500;
     font-size: 14px;
     line-height: calc(26 / 14);
     /* or 26px */
@@ -87,17 +93,21 @@
 .swiper {
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
   // outline: 2px solid rgb(178, 255, 71);
+}
+.swiper-wrapper {
+  margin-bottom: 30px;
 }
 .swiper-pagination-bullet {
   $color-disactive: rgba(217, 217, 217, 1);
   width: 10px;
   height: 10px;
+  //перебиваю, тому що колір перебивається з зовнішньої бібліотеки
   background-color: $color-disactive !important;
 }
 
 .swiper-pagination-bullet-active {
+  //перебиваю, тому що колір перебивається з зовнішньої бібліотеки
   background-color: var(--bcg-color-second) !important;
 }
 
