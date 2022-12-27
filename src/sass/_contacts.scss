@@ -33,7 +33,6 @@ address {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 24px;
-    margin-top: -353px;
 
     @media screen and (min-width:480px) {
         min-width: 280px;
@@ -52,6 +51,12 @@ address {
         height: 542px;
         padding: 40px;
         margin-top: -128px;
+    }
+}
+
+.contacts__card-item:first-child {
+    @media screen and (max-width: 767px) {
+        margin-top: -353px;
     }
 }
 
