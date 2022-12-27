@@ -30,11 +30,6 @@ ul {
         opacity: 0;
         visibility: hidden;
     
-    
-        /*  Установаем ширину окна  */
-        // width: 100%;
-        // max-width: 500px;
-    
         /*  Центрируем и задаем z-index */
         position: fixed;
         top: 50%;
@@ -45,29 +40,30 @@ ul {
     
         /*  Побочные стили   */
         box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
-        text-align: center;
-        padding: 30px;
-        border-radius: 3px;
-        background-color: #fff;
+        border-radius: 10px;
+        background-color: #FCFCFC;
         transition: 0.3s all;
-
-
 
     &--products {
         min-width: 280px;
-        min-height: 968px;
+        height: 968px;
         padding: 26px 18px;
+        height: 100%;
+        overflow: auto;
         
         @media screen and (min-width: 768px) {
-            padding: 32px 58px;
+            padding: 32px 38px;
             min-width: 568px;
-            min-height: 996px;
+            height: 996px;
+            height: 100%;
+            overflow: auto;
         }
     }
 
     &--made {
         min-width: 280px;
         min-height: 459px;
+        padding: 28px;
 
         @media screen and (min-width: 768px) {
             padding: 32px 58px;
@@ -79,6 +75,7 @@ ul {
     &--locations {
         min-width: 280px;
         min-height: 365px;
+        padding: 28px;
 
         @media screen and (min-width: 768px) {
             padding: 32px 58px;
@@ -89,12 +86,17 @@ ul {
 
     &--franchise {
         min-width: 280px;
-        min-height: 674px;
+        height: 674px;
+        padding: 28px;
+        height: 100%;
+        overflow: auto;
 
         @media screen and (min-width: 768px) {
             padding: 32px 58px;
             min-width: 568px;
-            min-height: 668px;
+            height: 668px;
+            height: 100%;
+            overflow: auto;
         }
     }
 
@@ -272,7 +274,14 @@ ul {
     &__location {
         display: block;
         width: fit-content;
-            margin: 0 auto;
+        margin: 0 auto;
+        width: 134px;
+        text-decoration: none;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            width: 145px;
+        }
     }
 }
 
@@ -310,7 +319,7 @@ iframe {
         height: 132px;
         width: 132px;
         border-radius: 50%;
-        position: relative;
+        // position: relative;
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
@@ -321,7 +330,7 @@ iframe {
 
     &__img {
         content: '';
-        position: absolute;
+        // position: absolute;
         margin-top: -7px;
     }
 }
