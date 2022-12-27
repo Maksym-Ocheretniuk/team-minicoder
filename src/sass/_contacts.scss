@@ -31,11 +31,20 @@ address {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 24px;
-  margin-top: -353px;
+
+  border: 1px solid transparent;
+  transition: var(--animation-color);
 
   &:hover,
   &:focus {
     border: 1px solid var(--text-color-accent);
+    outline-offset: -1px;
+  }
+
+  &:first-child {
+    @media screen and (max-width: 768px) {
+      margin-top: -353px;
+    }
   }
 
   @media screen and (min-width: 480px) {
@@ -116,6 +125,13 @@ address {
   font-size: 12px;
   line-height: 1.83;
   color: var(--text-color-contacts-adr);
+
+  transition: var(--animation-color);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -226,6 +242,13 @@ address {
   font-size: 12px;
   line-height: 1.58;
   color: var(--text-color-second);
+
+  transition: var(--animation-color);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
