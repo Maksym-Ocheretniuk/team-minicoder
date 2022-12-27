@@ -1,3 +1,8 @@
+// плавна прокрутка по сайту
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bcg-color-primary);
   font-family: 'Montserrat', Verdana, sans-serif;
