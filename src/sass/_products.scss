@@ -245,6 +245,7 @@
         display: flex;
         background-color: transparent;
         cursor: pointer;
+        transition: color var(--animation-color);
 @media screen and (min-width: 768px) {
         
         bottom: 12px;
@@ -254,4 +255,11 @@
          bottom: 60px;
          right: 165px;
  }
+}
+.products__icon{
+        fill: currentColor;
+}
+.products__btn:hover,
+.products__btn:focus{
+        color: var(--modal-bcg-color-primary);
 }
