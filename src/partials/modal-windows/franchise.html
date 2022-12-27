@@ -1,30 +1,31 @@
-<div class="backdrop backdrop--hidden" data-modal>
-    <div class="modal modal--franchise">
-        <button data-modal-close class="modal__button">
-            <svg class="" width="20px" height="20px">
-                <use href="./images/icons.svg#icon-btn-close"></use>
-            </svg>
-        </button>
+<div class="modal modal--franchise" data-modal="2">
+    <button data-modal-close class="modal__button">
+        <svg class="modal__cross js-modal-close" width="20px" height="20px">
+            <use href="./images/icons.svg#icon-btn-close"></use>
+        </svg>
+    </button>
 
-        <h2 class="modal__title">
-            Thank you for your interest in owning an Ice Cream shop
-        </h2>
+    <h2 class="modal__titles">
+        Thank you for your interest in owning an Ice Cream shop
+    </h2>
 
-        <p class="modal__text">
-            Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once
-            the application process resumes, we will contact you for further information. Please fill out the contact information
-            below and we will reach out for additional information. We appreciate your patience.
-        </p>
+    <p class="modal__text">
+        Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this
+        time. Once
+        the application process resumes, we will contact you for further information. Please fill out the contact
+        information
+        below and we will reach out for additional information. We appreciate your patience.
+    </p>
 
-        <form class="modal__form">
-            <ul class="modal__blank">
-                <li><input class="label" type="text" required placeholder="Name" pattern="[a-z]{1,15}"></li>
-                <li><input class="label" type="tel" required placeholder="Phone" pattern="[+380][0-9]{9}"></li>
-                <li><input class="label" type="email" required placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></li>
-                <li><textarea class="textarea" name="Comment" placeholder="Comment"></textarea></li>
-            </ul>
+    <form class="modal__form">
+        <ul class="modal__blank">
+            <li><input class="label" type="text" required placeholder="Name" pattern="[a-z]{1,15}"></li>
+            <li><input class="label" type="tel" required placeholder="Phone" pattern="[+380][0-9]{9}"></li>
+            <li><input class="label" type="email" required placeholder="Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></li>
+            <li><textarea class="textarea" name="Comment" placeholder="Comment"></textarea></li>
+        </ul>
 
-            <button class="button__modal" type="submit">Submit</button>
-        </form>
-    </div>
+        <button class="button__modal" type="submit">Submit</button>
+    </form>
 </div>
