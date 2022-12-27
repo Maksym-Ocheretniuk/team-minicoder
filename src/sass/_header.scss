@@ -23,3 +23,74 @@ height: 37px;
     height: 65px;
   }
 }
+
+// button
+.btn {
+    height: 42px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8d24e;
+    color: #000000;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    gap: 4px;
+    cursor: pointer;
+    transition-property: background-color, fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background-color: #0a8817;
+    }
+
+    &:focus {
+      outline: none;
+      color: #fcfcfc;
+    }
+
+    &:disabled {
+      background-color: #ababab;
+      color: #000000;
+    }
+
+&__buy-now {
+  width: 152px;
+
+  // =========кнопка "buy-now" додатковий клас, додаємо тільки в мобільному меню==============
+  &__mobil-menu {
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and(max-width:767.9px) {
+      margin-bottom: 64px;
+    }
+  }
+}
+}
+
+#btn-header{
+  display: none;
+  @media screen and (min-width: 768px) {
+      display: flex;
+    }
+}
+
+#btn-header-mobile-menu{
+  display: flex;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+}
