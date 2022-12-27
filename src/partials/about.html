@@ -1,5 +1,5 @@
-<section>
-  <div class="about container">
+<section class="about">
+  <div class="container">
     <div class="about-title">
       <p class="about-title__label">tradition and love</p>
       <h2 class="section__title subject" id="howit’smade">how it’s made?</h2>
@@ -11,8 +11,8 @@
           <source
             media="(min-width: 1200px)"
             srcset="
-              ./images/about/img1_ld@1x-min.png 1x,
-              ./images/about/img1_ld@1x-min.png 2x
+              ./images/about/img1_ld@1x.png 1x,
+              ./images/about/img1_ld@2x.png 2x
             "
             type="image/png"
           />
@@ -20,8 +20,8 @@
           <source
             media="(min-width: 768px)"
             srcset="
-              ./images/about/img1_md@1x-min.png 1x,
-              ./images/about/img1_md@1x-min.png 2x
+              ./images/about/img1_md@1x.png 1x,
+              ./images/about/img1_md@2x.png 2x
             "
             type="image/png"
           />
@@ -29,17 +29,17 @@
           <source
             media="(max-width: 767px)"
             srcset="
-              ./images/about/img1_sm@1x-min.png 1x,
-              ./images/about/img1_sm@1x-min.png 2x
+              ./images/about/img1_sm@1x.png 1x,
+              ./images/about/img1_sm@2x.png 2x
             "
             type="image/png"
           />
           <img
             class="about-img"
-            src="./images/about/img1_sm@1x-min.png"
+            src="./images/about/img1_sm@1x.png"
             alt="корова"
-            width="490"
-            height="490"
+            width="279"
+            height="278"
             loading="lazy"
           />
         </picture>
@@ -59,7 +59,12 @@
         <p class="about-right__desc">
           This is enough to choose ice cream and coffee for any mood!
         </p>
-        <button class="about-button" type="button">Read more</button>
+        <button type="button" class="btn__read-more btn">
+          Read more
+          <svg class="btn__icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-arrow-ep-right"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
