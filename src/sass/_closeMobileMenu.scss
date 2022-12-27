@@ -28,6 +28,7 @@
 
 .header__menu {
   display: flex;
+  align-items: center;
   @media screen and (min-width: 768px) {
     gap: 32px;
   }
@@ -63,7 +64,7 @@
   width: 100vw;
   height: 100vh;
 
-  z-index: 999;
+  z-index: 29;
 
   padding-top: 12px;
   padding-left: 32px;
