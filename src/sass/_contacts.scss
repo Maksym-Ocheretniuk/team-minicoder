@@ -1,325 +1,324 @@
-
-
 address {
-    font-style: normal;   /* Можна додати в ресет*/
+  font-style: normal; /* Можна додати в ресет*/
 }
 
 .contacts {
-    background-color: var(--bcg-color-second);
+  background-color: var(--bcg-color-second);
 }
 
 .contacts__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 
-    @media screen and (min-width:768px) {
-        flex-direction: row;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 
-    @media screen and (min-width:1200px) {
-        gap: 32px;
-        justify-content: center;
-    }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+    justify-content: center;
+  }
 }
 
 .contacts__card-item {
-    max-width: 280px;
-    background-color: var(--text-color-primary);
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 24px;
-    margin-top: -353px;
+  max-width: 280px;
+  background-color: var(--text-color-primary);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  margin-top: -353px;
 
-    @media screen and (min-width:480px) {
-        min-width: 280px;
-        height: 412px;
-    }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--text-color-accent);
+  }
 
-    @media screen and (min-width: 768px) and (max-width:1199px) {
-        min-width: 224px;
-        height: 537px;
-        padding: 40px 24px;
-        margin-top: -299px;
-    }
+  @media screen and (min-width: 480px) {
+    min-width: 280px;
+    height: 412px;
+  }
 
-    @media screen and (min-width:1200px) {
-        min-width: 368px;
-        height: 542px;
-        padding: 40px;
-        margin-top: -128px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 224px;
+    height: 537px;
+    padding: 40px 24px;
+    margin-top: -299px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 368px;
+    height: 542px;
+    padding: 40px;
+    margin-top: -128px;
+  }
 }
 
 .contacts__card-title {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--text-color-second);
-    padding: 4px 22px;
-    text-transform: uppercase;
-    width: max-content;
-    border-radius: 4px;
-    background-color: var(--text-color-accent);
-    margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--text-color-second);
+  padding: 4px 22px;
+  text-transform: uppercase;
+  width: max-content;
+  border-radius: 4px;
+  background-color: var(--text-color-accent);
+  margin-bottom: 20px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.37;
+    padding: 4px 13px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width:768px) {
-        font-size: 16px;
-        line-height: 1.37;
-        padding: 4px 13px;
-        border-radius: 6px;
-        margin-bottom: 32px;
-    }
-
-    @media screen and (min-width:1200px) {
-        padding: 4px 14px;
-    }
-
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
 }
 
 .contacts__card-title--foodtrack {
-    width: max-content;
+  width: max-content;
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        padding: 4px 10px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 4px 10px;
+  }
 }
 
 .contacts__city {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: var(--text-color-second);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--text-color-second);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
     margin-bottom: 8px;
-
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        font-size: 14px;
-        line-height: 1.85;
-        margin-bottom: 12px;
-    }
-    
-    @media screen and (min-width:1200px) {
-        font-size: 16px;
-        line-height: 1.87;
-        margin-bottom: 8px;
-    }
+  }
 }
 .contacts_map {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: var(--text-color-contacts-adr);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--text-color-contacts-adr);
 
-    @media screen and (min-width:768px) {
-        font-size: 14px;
-        line-height: 1.85;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
 
-    @media screen and (min-width:1200px) {
-        font-size: 16px;
-        line-height: 1.87;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
 .contacts__location {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    @media screen and (min-width:768px) {
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__line {
-    max-width: 216px;
-    height: 0;
-    border: 1px solid #E1E1E1;
-    margin-bottom: 24px;
-    padding-left: 32px;
-    padding-right: 32px;
+  max-width: 216px;
+  height: 0;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        width: 176px;
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 176px;
+    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width:1200px) {
-        max-width: 288px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 288px;
+  }
 }
 
 .contacts__schedule {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .contacks-schedule-item {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    @media screen and (min-width:1200px) {
-        margin-bottom: 12px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12px;
+  }
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-
 .contacts__days {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: var(--text-color-second);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--text-color-second);
 
-    @media screen and (min-width:768px) {
-        font-size: 14px;
-        line-height: 1.85;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
 
-    @media screen and (min-width:1200px) {
-        font-size: 16px;
-        line-height: 1.87;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
 .contacts__time {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: var(--btn-bcg-color-disabled);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--btn-bcg-color-disabled);
 
-    @media screen and (min-width:768px) {
-        font-size: 14px;
-        line-height: 1.85;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
 
-    @media screen and (min-width:1200px) {
-        font-size: 16px;
-        line-height: 1.87;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
 .contacts__info-item {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 
-    @media screen and (min-width:768px) {
-        margin-bottom: 4px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4px;
+  }
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__link {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.58;
-    color: var(--text-color-second);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--text-color-second);
 
-    @media screen and (min-width:768px) {
-        font-size: 14px;
-        line-height: 1.85;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
 
-    @media screen and (min-width:1200px) {
-        font-size: 16px;
-        line-height: 1.87;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
 .contacts__btn-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
 
-    @media screen and (min-width:768px) {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+  }
 
-    @media screen and (min-width:1200px) {
-        margin-top: 60px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
 }
 
 .btn {
-    height: 42px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--text-color-accent);
-    color: var(--btn-text-color-primary);
-    padding: 12px 0;
-    border: none;
-    border-radius: 8px;
-    gap: 4px;
-    cursor: pointer;
-    transition-property: background-color, fill, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover {
-            background-color: var(--btn-bcg-color-accent);
-        }
-    
-        &:focus {
-            outline: none;
-            color: var(--modal-bcg-color-primary);
-        }
-    
-        &:disabled {
-            background-color: var(--btn-bcg-color-disabled);
-            color: var(--btn-text-color-primary);
-        }
-        &__locations {
-            width: 196px;
-            color: var(--text-color-second);
-        }
-    
-        &__franchise {
-            width: 196px;
-            background-color: transparent;
-            border: 2px solid #f8d24e;
-            border-radius: 10px;
-    
-        &:hover {
-            background-color: transparent;
-            border: 2px solid #0a8817;
-        }
-    
-        &:focus {
-            background-color: transparent;
-            color: var(--text-color-primary);
-            border: 2px solid #0a8817;
-        }
-    
-        &:disabled {
-            outline: none;
-            color: var(--btn-text-color-primary);
-            border: 2px solid #ababab;
-        }
-        }
+  height: 42px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-color-accent);
+  color: var(--btn-text-color-primary);
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  gap: 4px;
+  cursor: pointer;
+  transition-property: background-color, fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--btn-bcg-color-accent);
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-        border-radius: 10px;
+  &:focus {
+    outline: none;
+    color: var(--modal-bcg-color-primary);
+  }
+
+  &:disabled {
+    background-color: var(--btn-bcg-color-disabled);
+    color: var(--btn-text-color-primary);
+  }
+  &__locations {
+    width: 196px;
+    color: var(--text-color-second);
+  }
+
+  &__franchise {
+    width: 196px;
+    background-color: transparent;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #0a8817;
     }
+
+    &:focus {
+      background-color: transparent;
+      color: var(--text-color-primary);
+      border: 2px solid #0a8817;
+    }
+
+    &:disabled {
+      outline: none;
+      color: var(--btn-text-color-primary);
+      border: 2px solid #ababab;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    border-radius: 10px;
+  }
 }
