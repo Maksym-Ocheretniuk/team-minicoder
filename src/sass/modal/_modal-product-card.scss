@@ -21,9 +21,11 @@
   transition-duration: 250s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  height: 90%;
-  overflow: auto;
-
+  &--overflow {
+    height: 90%;
+    overflow: auto;
+  }
+  
   @media screen and (min-width: 768px) {
     height: min-content;
     width: 568px;
