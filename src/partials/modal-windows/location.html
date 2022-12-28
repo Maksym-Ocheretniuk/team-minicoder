@@ -1,25 +1,22 @@
+<div class="modal modal--locations" data-modal="1">
+  <button data-modal-close class="modal__button">
+    <svg class="modal__cross js-modal-close" width="20px" height="20px">
+      <use href="./images/icons.svg#icon-btn-close"></use>
+    </svg>
+  </button>
 
-    <div class="modal modal--locations" data-modal="1">
-        <button data-modal-close class="modal__button">
-            <svg class="modal__cross js-modal-close" width="20px" height="20px">
-                <use href="./images/icons.svg#icon-btn-close"></use>
-            </svg>
-        </button>
+  <h2 class="modal__titles">
+    Our Locations
+  </h2>
 
-        <h2 class="modal__titles">
-            Our Locations
-        </h2>
+  <picture class="map">
+    <source media="(min-width: 768px)"
+      srcset="./images/modal-windows/location/tablet-1.jpg 1x, ./images/modal-windows/location/tablet-2.jpg 2x">
+    <source media="(min-width: 767px)"
+      srcset="./images/modal-windows/location/tel-1.jpg 1x, ./images/modal-windows/location/tel-2.jpg 2x">
 
-        <picture class="map">
-            <source 
-                media="(min-width: 768px)" 
-                srcset="./images/modal-windows/location/tablet-1.jpg 1x, ./images/modal-windows/location/tablet-2.jpg 2x">
-            <source 
-                media="(min-width: 767px)" 
-                srcset="./images/modal-windows/location/tel-1.jpg 1x, ./images/modal-windows/location/tel-2.jpg 2x">
-            
-            <img src="./images/modal-windows/location/tel-1.jpg" alt="map">
-        </picture>
-        
-        <a class="button__location btn__open-map btn" href="https://goo.gl/maps/oKiG1djdCJ4PhmQY8">Open map</a>
-    </div>
+    <img src="./images/modal-windows/location/tel-1.jpg" alt="map">
+  </picture>
+
+  <a class="button__location btn__open-map btn" href="https://goo.gl/maps/oKiG1djdCJ4PhmQY8">Open map</a>
+</div>
