@@ -66,7 +66,7 @@
 
   z-index: 29;
 
-  padding-top: 12px;
+padding-top: 12px;
   padding-left: 32px;
   padding-right: 20px;
   padding-bottom: 64px;
@@ -78,9 +78,9 @@
   transition: transform 250ms ease-in-out;
 
   @media screen and (min-width: 768px) {
-    padding-top: 20px;
-    padding-right: 32px;
-  }
+      padding-top: 20px;
+      padding-right: 32px;
+    }
 
   &.is-open {
     transform: translateX(0);
@@ -90,6 +90,8 @@
     display: none;
   }
 }
+
+
 
 // mobile menu inside
 .mobile__menu_inside {
@@ -137,3 +139,12 @@
 .made {
   color: var(--btn-text-color-second);
 }
+
+ // =========кнопка "buy-now" додатковий клас, додаємо тільки в мобільному меню==============
+   .btn.mobil-menu {
+    display: flex;
+
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }

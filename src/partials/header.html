@@ -1,14 +1,21 @@
 <header class="header">
   <div class="container header__container">
     <!-- logo -->
-    <img class="header__logo" src="./images/header/logo.png" alt="logo" loading="lazy" />
+    <img
+      class="header__logo"
+      src="./images/header/logo.png"
+      alt="logo"
+      loading="lazy"
+    />
 
     <!--  основна навігація сайту -->
     <nav>
       <ul class="header__site-nav list">
         <li><a class="site-nav__link link" href="./">Home</a></li>
         <li>
-          <a class="site-nav__link link" href="#howitismade">How it&apos;s made?</a>
+          <a class="site-nav__link link" href="#howitismade"
+            >How it&apos;s made?</a
+          >
         </li>
         <li>
           <a class="site-nav__link link" href="#products">Our products</a>
@@ -18,14 +25,25 @@
     </nav>
     <!-- мобільне меню  -->
     <div class="header__menu">
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="open__menu-icon" width="32px" height="32px">
           <use href="./images/icons.svg#icon-menu-open"></use>
         </svg>
       </button>
 
-      <button class="btn btn__buy-now js-open-modal" id="btn-header" data-modal="5" type="button">
-        Buy now &gt;
+      <button
+        type="button"
+        data-modal="5"
+        class="btn__buy-now btn js-open-modal"
+      >
+        Buy now
+        <svg class="btn__icon" width="12px" height="12px">
+          <use href="./images/icons.svg#icon-arrow-ep-right"></use>
+        </svg>
       </button>
     </div>
   </div>
