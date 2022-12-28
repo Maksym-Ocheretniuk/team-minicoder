@@ -157,24 +157,13 @@
 }
 
 .footer__contact-link {
-  // font-weight: 700;
-  // font-size: 12px;
-  // line-height: calc(22 / 12);
-
   color: var(--text-color-primary);
 
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: calc(26 / 14);
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   // font-size: 16px;
-  //   // line-height: calc(30 / 16);
-  //   // letter-spacing: 0.02em;
-  // }
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
 }
-
 /* -----------------------------------копірайт */
 .copyright {
   border-top: 1px solid #e1e1e1;
@@ -203,7 +192,7 @@
 
   text-align: center;
 
-  max-width: 200px;
+  // max-width: 280px;
   margin: 0 auto;
 
   // border-top: 1px solid #e1e1e1;
@@ -216,5 +205,11 @@
   @media screen and (min-width: 1200px) {
     font-size: 12px;
     line-height: calc(22 / 12);
+  }
+}
+
+.br {
+  @media (min-width: 768px) {
+    display: none;
   }
 }
