@@ -279,7 +279,8 @@ address {
   }
 }
 
-.btn {
+.contacts__btn--locations {
+  width: 196px;
   height: 42px;
   font-weight: 600;
   font-size: 12px;
@@ -288,7 +289,7 @@ address {
   align-items: center;
   justify-content: center;
   background-color: var(--text-color-accent);
-  color: var(--btn-text-color-primary);
+  color: var(--text-color-second);
   padding: 12px 0;
   border: none;
   border-radius: 8px;
@@ -310,34 +311,6 @@ address {
     background-color: var(--btn-bcg-color-disabled);
     color: var(--btn-text-color-primary);
   }
-  &__locations {
-    width: 196px;
-    color: var(--text-color-second);
-  }
-
-  &__franchise {
-    width: 196px;
-    background-color: transparent;
-    border: 2px solid #f8d24e;
-    border-radius: 10px;
-
-    &:hover {
-      background-color: transparent;
-      border: 2px solid #0a8817;
-    }
-
-    &:focus {
-      background-color: transparent;
-      color: var(--text-color-primary);
-      border: 2px solid #0a8817;
-    }
-
-    &:disabled {
-      outline: none;
-      color: var(--btn-text-color-primary);
-      border: 2px solid #ababab;
-    }
-  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -345,3 +318,50 @@ address {
     border-radius: 10px;
   }
 }
+
+.contacts__btn--franchise {
+  width: 196px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #000000;
+  padding: 12px 0;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  gap: 4px;
+  cursor: pointer;
+  transition-property: background-color, fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #0a8817;
+    }
+    
+    &:focus {
+      background-color: transparent;
+      color: var(--text-color-primary);
+      border: 2px solid #0a8817;
+    }
+    
+    &:disabled {
+      outline: none;
+      color: var(--btn-text-color-primary);
+      border: 2px solid #ababab;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      border-radius: 10px;
+    }
+}
+
