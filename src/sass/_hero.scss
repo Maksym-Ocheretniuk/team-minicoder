@@ -110,6 +110,8 @@
   }
 
   &__buttons {
+    position: relative;
+    z-index: 10;
     display: flex;
     gap: 12px;
 
@@ -237,118 +239,87 @@
       right: 92px;
     }
   }
+
+  // Стилі для кнопок
+  // ==========добавляти ".btn" до кожної кнопки, дефолтні значення=================
+  &__btn {
+    // =========кнопка "Products"==============
+    &--products {
+      width: 108px;
+      height: 38px;
+      background-color: transparent;
+      border: 2px solid #f8d24e;
+
+      @media screen and (min-width: 1200px) {
+        width: 134px;
+        height: 42px;
+      }
+      &:hover {
+        background-color: transparent;
+        border: 2px solid #0a8817;
+      }
+      &:focus {
+        background-color: transparent;
+        color: #fcfcfc;
+        border: 2px solid #0a8817;
+      }
+      &:disabled {
+        background-color: transparent;
+        color: #000000;
+        border: 2px solid #ababab;
+      }
+    }
+    // =========кнопка "how-made"==============
+    &--how-its-made {
+      width: 114px;
+      // height: 24px;
+      padding: 0;
+      border: none;
+      color: #f8d24e;
+      text-decoration: underline;
+      background-color: transparent;
+
+      @media screen and (min-width: 1200px) {
+        width: 144px;
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: #0a8817;
+      }
+      &:focus {
+        background-color: transparent;
+        outline: none;
+        color: #fcfcfc;
+      }
+      &:disabled {
+        background-color: transparent;
+        color: #ababab;
+      }
+    }
+
+    &__product {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      color: #131313;
+
+      &:hover,
+      &:focus {
+        color: #f8d24e;
+      }
+      @media screen and(min-width:768px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }
 
 .arrov-right {
   fill: currentColor;
-}
-
-// Стилі для кнопок
-// ==========добавляти ".btn" до кожної кнопки, дефолтні значення=================
-.btn {
-  height: 42px;
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(15 / 12);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #f8d24e;
-  color: #000000;
-  padding: 12px 0;
-  border: none;
-  border-radius: 8px;
-  gap: 4px;
-  cursor: pointer;
-  transition-property: background-color, fill, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: calc(18 / 14);
-    border-radius: 10px;
-  }
-  &:hover {
-    background-color: #0a8817;
-  }
-  &:focus {
-    outline: none;
-    color: #fcfcfc;
-  }
-  &:disabled {
-    background-color: #ababab;
-    color: #000000;
-  }
-  // =========кнопка "Products"==============
-  &__products {
-    width: 108px;
-    height: 38px;
-    background-color: transparent;
-    border: 2px solid #f8d24e;
-    @media screen and (min-width: 1200px) {
-      width: 134px;
-      height: 42px;
-    }
-    &:hover {
-      background-color: transparent;
-      border: 2px solid #0a8817;
-    }
-    &:focus {
-      background-color: transparent;
-      color: #fcfcfc;
-    }
-    &:disabled {
-      background-color: transparent;
-      color: #000000;
-      border: 2px solid #ababab;
-    }
-  }
-  // =========кнопка "how-made"==============
-  &__how-made {
-    width: 114px;
-    // height: 24px;
-    padding: 0;
-    border: none;
-    color: #f8d24e;
-    text-decoration: underline;
-    background-color: transparent;
-
-    @media screen and (min-width: 1200px) {
-      width: 144px;
-    }
-
-    &:hover {
-      background-color: transparent;
-      color: #0a8817;
-    }
-    &:focus {
-      background-color: transparent;
-      outline: none;
-      color: #fcfcfc;
-    }
-    &:disabled {
-      background-color: transparent;
-      color: #ababab;
-    }
-  }
-  &__product {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 20px;
-    height: 20px;
-    color: #131313;
-    &:hover,
-    &:focus {
-      color: #f8d24e;
-    }
-    @media screen and(min-width:768px) {
-      width: 24px;
-      height: 24px;
-    }
-  }
 }
 
 @keyframes scaleUp {
