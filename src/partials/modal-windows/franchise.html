@@ -19,10 +19,21 @@
 
   <form class="modal__form">
     <ul class="modal__blank">
-      <li><input class="label" type="text" required placeholder="Name" pattern="[a-z]{1,15}"></li>
-      <li><input class="label" type="tel" required placeholder="Phone" pattern="[+380][0-9]{9}"></li>
-      <li><input class="label" type="email" required placeholder="Email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></li>
+      <li>
+        <input class="label" type="text" required placeholder="Name" 
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+      </li>
+
+      <li>
+        <input class="label" type="tel" required placeholder="Phone" 
+        pattern="[0-9]{10}" title="The minimum number of digits is 10">
+      </li>
+
+      <li>
+        <input class="label" type="email" required placeholder="Email" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      </li>
+
       <li><textarea class="textarea" name="Comment" placeholder="Comment"></textarea></li>
     </ul>
 
